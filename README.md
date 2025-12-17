@@ -11,48 +11,37 @@ This project is a frontend dashboard application that allows users to upload a C
 - The CSV file must contain headers exactly named: date, person, miles  
 - Dates are provided in a valid ISO / YYYY-MM-DD format
 - Miles run is a numeric value (integer or decimal)
-
-Data is processed entirely on the client side
-
-No backend, authentication, or database is required
-
-The CSV file size is assumed to be small to medium
+- Data is processed entirely on the client side
+- No backend, authentication, or database is required
+- The CSV file size is assumed to be small to medium
 
 ## 3. Prerequisites
-
-Node.js: v18 or higher
-
-npm: v9 or higher
+- Node.js: v18 or higher
+- npm: v9 or higher
 
 Tools:
-
-Modern browser (Chrome / Firefox / Edge)
-
-Git (optional)
-
-No local database or backend services are required.
+- Modern browser (Chrome / Firefox / Edge)
+- Git (optional)
+- No local database or backend services are required.
 
 ## 4. Setup
-4.1 Clone the Repository
+**4.1 Clone the Repository**
 ```git clone <repository-url>
 cd csv-runner-dashboard
 ```
 
-4.2 Install All Dependencies
-
+**4.2 Install All Dependencies**
 Install all required dependencies using npm:
 
 ```
 npm install
 ```
 
-
 If installing or verifying dependencies manually, the project uses:
 
 ```
 npm install papaparse recharts
 ```
-
 
 Initialize and install shadcn/ui components:
 
@@ -61,22 +50,21 @@ npx shadcn@latest init
 npx shadcn@latest add button card select
 ```
 
-4.3 Environment Variables
+**4.3 Environment Variables**
 
 This project does not require any environment variables.
 
 If required in the future, create a .env file from .env.example and add the relevant keys.
 
-4.4 Seed / Sample Data
+**4.4 Seed / Sample Data**
 
 No database seeding is required.
 
-A sample CSV file is provided at:
+- A sample CSV file is provided at:
 
 /public/sample.csv
 
-
-This file can be uploaded directly to test the application.
+- This file can be uploaded directly to test the application.
 
 ## 5. Run & Verify
 Start Development Server
@@ -92,64 +80,43 @@ http://localhost:5173
 ```
 
 Verification Steps (Acceptance Checklist)
-Upload & Parse CSV
-
-Upload sample.csv
-
-CSV headers and data are validated
-
-Error messages appear for invalid CSV files
-
-Overall Metrics
-
-Average miles
-
-Minimum miles
-
-Maximum miles
-
-Per-Person View
-
-Select a person from the dropdown
-
-Metrics and charts update dynamically
-
-Charts
-
-Line chart displays miles run over time
+- Upload & Parse CSV
+- Upload sample.csv
+- CSV headers and data are validated
+- Error messages appear for invalid CSV files
+- Overall Metrics
+- Average mile
+- Minimum miles
+- Maximum miles
+- Per-Person View
+- Select a person from the dropdown
+- Metrics and charts update dynamically
+- Charts
+- Line chart displays miles run over time
 
 Works for both overall and per-person views
 
 ## 6. Features & Limitations
-Features
+**Features**
 
-CSV upload with validation
+- CSV upload with validation
+- Overall and per-person analytics
+- Summary metrics (average, min, max)
+- Interactive line chart visualization
+- Professional and responsive UI
 
-Overall and per-person analytics
+**Limitations**
 
-Summary metrics (average, min, max)
+- No persistent data storage
+- Not optimized for very large CSV files
+- No CSV export functionality
 
-Interactive line chart visualization
+**Future Improvements**
 
-Professional and responsive UI
-
-Limitations
-
-No persistent data storage
-
-Not optimized for very large CSV files
-
-No CSV export functionality
-
-Future Improvements
-
-Drag-and-drop CSV upload
-
-Raw data table view
-
-CSV export of filtered data
-
-Additional chart types and aggregations
+- Drag-and-drop CSV upload
+- Raw data table view
+- CSV export of filtered data
+- Additional chart types and aggregations
 
 ## 7. Notes on Architecture
 Folder Structure

@@ -93,8 +93,7 @@ Verification Steps (Acceptance Checklist)
 - Metrics and charts update dynamically
 - Charts
 - Line chart displays miles run over time
-
-Works for both overall and per-person views
+- Works for both overall and per-person views
 
 ## 6. Features & Limitations
 **Features**
@@ -151,3 +150,7 @@ Works for both overall and per-person views
 ## ✅ Summary
 
 This project demonstrates clean frontend architecture, proper CSV validation, dynamic data visualization, and professional UI design. It fully meets the challenge requirements while remaining simple, extensible, and easy to understand.
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://portfolio-website-chi-ten-84.vercel.app/ )
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]( https://www.linkedin.com/in/reshamrout26)

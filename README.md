@@ -62,7 +62,7 @@ No database seeding is required.
 
 - A sample CSV file is provided at:
 
-/public/sample.csv
+- /public/sample.csv
 
 - This file can be uploaded directly to test the application.
 
@@ -119,8 +119,8 @@ Works for both overall and per-person views
 - Additional chart types and aggregations
 
 ## 7. Notes on Architecture
-Folder Structure
-src/
+**Folder Structure**
+```src/
 ├── components/
 │   ├── CsvUploader.jsx
 │   ├── MetricsCard.jsx
@@ -133,29 +133,21 @@ src/
 │   └── metrics.js
 ├── App.jsx
 └── main.jsx
-
-State & Data Management
-
-CSV data is stored in local React state
-
-Derived state is used for filtering and metric calculation
-
-No global state management library is used to keep the app simple and maintainable
+```
+- State & Data Management
+- CSV data is stored in local React state
+- Derived state is used for filtering and metric calculation
+- No global state management library is used to keep the app simple and maintainable
 
 ## 8. Accessibility & UI
 
-Semantic HTML elements for structure
+- Semantic HTML elements for structure
+- Keyboard-accessible inputs and dropdowns
+- Clear labels and placeholders
+- Adequate color contrast using shadcn/ui defaults
+- Consistent spacing and readable typography
+- Responsive layout for different screen sizes
 
-Keyboard-accessible inputs and dropdowns
-
-Clear labels and placeholders
-
-Adequate color contrast using shadcn/ui defaults
-
-Consistent spacing and readable typography
-
-Responsive layout for different screen sizes
-
-✅ Summary
+## ✅ Summary
 
 This project demonstrates clean frontend architecture, proper CSV validation, dynamic data visualization, and professional UI design. It fully meets the challenge requirements while remaining simple, extensible, and easy to understand.

@@ -36,8 +36,9 @@ No local database or backend services are required.
 
 4. Setup
 4.1 Clone the Repository
-git clone <repository-url>
+```git clone <repository-url>
 cd csv-runner-dashboard
+```
 
 4.2 Install All Dependencies
 

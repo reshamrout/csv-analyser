@@ -2,8 +2,9 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+
 body {
-  font-family: system-ui, sans-serif;
+  font-family: Inter, system-ui, sans-serif;
 }
 
 @theme inline {

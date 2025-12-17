@@ -35,11 +35,11 @@ Tools:
 ## 4. Setup
 **4.1 Clone the Repository**
 ```
-git clone [<repository-url>](https://github.com/reshamrout/csv-analyser.git)
+git clone https://github.com/reshamrout/csv-analyser.git
 cd csv-runner-dashboard
 ```
 
-**4.2 Install All Dependencies**
+**4.2 Install All Dependencies**  
 Install all required dependencies using npm:
 
 ```
@@ -61,9 +61,8 @@ npx shadcn@latest add button card select
 
 **4.3 Environment Variables**
 
-This project does not require any environment variables.
-
-If required in the future, create a .env file from .env.example and add the relevant keys.
+- This project does not require any environment variables.
+- If required in the future, create a .env file from .env.example and add the relevant keys.
 
 **4.4 Seed / Sample Data**
 
@@ -71,7 +70,9 @@ No database seeding is required.
 
 - A sample CSV file is provided at:
 
-- /public/sample.csv
+```
+/public/sample.csv
+```
 
 - This file can be uploaded directly to test the application.
 

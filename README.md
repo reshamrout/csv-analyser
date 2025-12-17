@@ -89,7 +89,7 @@ Open the application in your browser:
 http://localhost:5173
 ```
 
-Verification Steps (Acceptance Checklist)
+**Verification Steps (Acceptance Checklist)**
 - Upload & Parse CSV
 - Upload sample.csv
 - CSV headers and data are validated
@@ -129,7 +129,8 @@ Verification Steps (Acceptance Checklist)
 
 ## 7. Notes on Architecture
 **Folder Structure**
-```src/
+```
+src/
 ├── components/
 │   ├── CsvUploader.jsx
 │   ├── MetricsCard.jsx

@@ -21,27 +21,30 @@ const Dashboard = () => {
     filteredData.length > 0 ? calculateMetrics(filteredData) : null;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <CsvUploader onDataLoaded={setRows} />
 
       {rows.length > 0 && (
         <>
-          <PersonSelector
-            persons={persons}
-            selectedPerson={selectedPerson}
-            onChange={setSelectedPerson}
-          />
-
+          <div className="flex justify-between items-center">
+            <PersonSelector
+              persons={persons}
+              selectedPerson={selectedPerson}
+              onChange={setSelectedPerson}
+            />
+          </div>
           <MetricsCard
             title={
               selectedPerson === "ALL"
-                ? "Overall Metrics"
-                : `Metrics for ${selectedPerson}`
+                ? "Overall Summary"
+                : `Summary for ${selectedPerson}`
             }
             metrics={metrics}
           />
-
-          <Charts data={filteredData} />
+          <Charts
+            data={filteredData}
+            title="Miles Run Over Time"
+          />
         </>
       )}
     </div>

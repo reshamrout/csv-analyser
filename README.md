@@ -1,10 +1,18 @@
-CSV Runner Dashboard
+# CSV Analyser Dashboard
 ## 1. Project Overview
+**Challenge:** CSV Runner  
+This project was built as part of the CSV Runner Dashboard challenge, which focuses on parsing structured data, validating inputs, computing metrics, and presenting insights through clear visualizations.
 
-Challenge: CSV Runner Dashboard
-Tech Stack: React.js (Vite), Tailwind CSS, shadcn/ui, Recharts
+The application allows users to upload a CSV file containing running activity data with the columns date, person, and miles. Once uploaded, the system validates the CSV structure and data types, handles errors gracefully for invalid inputs, and processes the data entirely on the client side.
 
-This project is a frontend dashboard application that allows users to upload a CSV file containing running activity data with the columns date, person, and miles. The application validates the CSV, computes summary metrics, and visualizes the data using interactive charts. Users can view insights for all runners or filter by individual persons.
+**The dashboard provides:**
+
+- Overall analytics across all runners
+- Per-person insights through dynamic filtering
+- Summary metrics such as average, minimum, and maximum miles run
+- Interactive charts to visualize running trends over time
+
+The project is implemented using React (Vite) for performance and modularity, Tailwind CSS and shadcn/ui for a clean and accessible user interface, and Recharts for data visualization. The design emphasizes clarity, usability, and maintainability, resembling a real-world internal analytics dashboard rather than a simple demo.
 
 ## 2. Assumptions
 
@@ -26,7 +34,8 @@ Tools:
 
 ## 4. Setup
 **4.1 Clone the Repository**
-```git clone <repository-url>
+```
+git clone [<repository-url>](https://github.com/reshamrout/csv-analyser.git)
 cd csv-runner-dashboard
 ```
 
